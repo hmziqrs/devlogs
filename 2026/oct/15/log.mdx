@@ -1,0 +1,11 @@
+Goal:
+So, the current goal of today is to update my AI repository to have the native parallelization dynamic workflow skills to work absolutely perfectly.
+
+Blocker:
+- Last night I was able to achieve the parallelization with porting to the new engine V2.2. But unfortunately, when I tried it today for a simple research task, it spawned static 7 phases workflow, which it did yesterday last night's testing.
+It had plan, implementer, vision, auditor phases, which was not required by a research task, especially the vision.
+
+- A new discovery: I asked the agent to create 4 workflows, like dynamic, make sure to design it according to their own needs. So one of the workflows was really simple for researchers, 4 auditors. But the thing is, it had a join on all 4 researchers; auditors cannot run until all the researchers are finished. So, I had it built a dedicated sub-agent for authoring workflows, which would prioritize parallelization instead of waiting game.
+
+Day End:
+Didn't achieve the goal unfortunately. I've updated the skills a few time also built a dedicated sub-agent for authoring workflows, but it still launched the engine flow as it is without stripping the vision phase. so I did a few iteration but still no concrete results for now.
